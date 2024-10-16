@@ -43,7 +43,162 @@
 
       <button id="nightDayMode">Night</button>
     </header>
-    <nav></nav>
+    <nav>
+      <a href="" class="Logo">
+        <img
+          src="/assets/images/Logo DRINKER BUDDY.png"
+          alt="Logo de notre site Drinker Buddy"
+      /></a>
+
+      <ul>
+        <li>
+          <button class="Login" id="voir-popup">Login</button>
+        </li>
+        <li>
+          <button class="Register" id="show-popup">Register</button>
+        </li>
+        <li>
+          <a href="" class="Profile"
+            ><img
+              id="bouttonProfileNC"
+              src="/assets/images/profile_boutton_blanc-removebg-preview.png"
+              alt="Logo de Profile"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- fenêtre d'ouverture Register -->
+
+    <div class="background-blur" id="blur-background"></div>
+
+    <div class="register-popup" id="register-popup">
+      <img
+        class="leBar"
+        src="/assets/images/bar.jpg"
+        alt="Inscrivez-vous et profiter d'un vers avec vos amis"
+      />
+      <form class="register-form">
+        <button class="fermer">X</button>
+        <h2>Register</h2>
+        <input
+          id="userNameInscription"
+          type="text"
+          placeholder="User name"
+          required
+        />
+        <input
+          id="emailInscription"
+          type="email"
+          placeholder="Address mail"
+          required
+        />
+        <input
+          id="passwordInscription"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <input type="password" placeholder="Confirm Password" required />
+        <button class="Submit" type="submit">Submit</button>
+        <p>
+          Already Registred ? Login <a href="" class="directionLogin">here</a>.
+        </p>
+        <div class="social-login">
+          <button class="google-login">
+            <img
+              src="/assets/images/Logo Google.png"
+              alt="Logo de Google"
+            />Continue with Google
+          </button>
+          <button class="facebook-login">
+            <img
+              src="/assets/images/logo_facebook_sans_contour-removebg-preview.png"
+              alt="Logo de Facebook"
+            />Continue with Facebook
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- fenêtre d'ouverture Login -->
+
+    <div class="fond-gris" id="fond-gris"></div>
+
+    <div class="login-popup" id="login-popup">
+      <img
+        class="leBar2"
+        src="/assets/images/barDrinkerBuddy.png"
+        alt="Inscrivez-vous et profiter d'un vers avec vos amis"
+      />
+      <form class="login-form">
+        <button class="close">X</button>
+        <h2>Login</h2>
+        <input
+          id="adressmail"
+          type="email"
+          placeholder="Address mail"
+          required
+        />
+        <input
+          id="motdepasse"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <button class="envoyer" type="submit">Submit</button>
+        <p>
+          Not yet Registred ? Do it
+          <a href="" class="directionRegister">here</a>.
+        </p>
+        <div class="social-connect">
+          <button class="google-connect">
+            <img
+              src="/assets/images/Logo Google.png"
+              alt="Logo de Google"
+            />Continue with Google
+          </button>
+          <button class="facebook-connect">
+            <img
+              src="/assets/images/logo_facebook_sans_contour-removebg-preview.png"
+              alt="Logo de Facebook"
+            />Continue with Facebook
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Menu déroulant du profil non connecté-->
+
+    <div class="profile-menu" id="profileMenu">
+      <h2>Mon Profile</h2>
+      <ul>
+        <li>
+          <button>
+            <img
+              src="/assets/images/Logo_Aide-removebg-preview.png"
+              alt="Logo du menu Aide"
+            />Aide
+          </button>
+        </li>
+        <li>
+          <button>
+            <img
+              src="/assets/images/Logo_Paramètre-removebg-preview.png"
+              alt="Logo du menu Paramètres"
+            />Paramètres
+          </button>
+        </li>
+        <li>
+          <button>
+            <img
+              src="/assets/images/Logo_Abonnement-removebg-preview.png"
+              alt="Logo du menu Abonnement"
+            />Abonnement
+          </button>
+        </li>
+      </ul>
+    </div>
 
     <main class="home_main">
       <h2>Bienvenue sur Drinker Buddy</h2>
@@ -76,6 +231,70 @@
       </section>
     </main>
 
-    <footer></footer>
+    <!-- pied de page -->
+
+    <footer>
+      <section class="Langue">
+        <img
+          src="/assets/images/logo_internet-removebg-preview.png"
+          alt="Logo du changement de Langue"
+        />
+        <select name="Language">
+          <option value="Français">Français</option>
+          <option value="English">English</option>
+        </select>
+      </section>
+
+      <section class="conditions">
+        <p>&copy, Tout droits réservés, The Drinker Buddy</p>
+        <ul>
+          <p>
+            <a
+              href="https://www.economie.gouv.fr/particuliers/protection-donnees-personnelles-droits-particuliers"
+              >Politique de confidentialité</a
+            >
+          </p>
+          <p>|</p>
+          <p>
+            <a
+              href="https://www.economie.gouv.fr/dgccrf/la-distribution-des-boissons-alcoolisees"
+              >Conditions générales</a
+            >
+          </p>
+        </ul>
+      </section>
+
+      <ul class="Logos">
+        <li>
+          <a href=""
+            ><img
+              src="/assets/images/logo_facebook-removebg-preview.png"
+              alt="Logo Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="/assets/images/logo_twitter-removebg-preview.png"
+              alt="Logo Twitter"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="/assets/images/logo_instagram-removebg-preview.png"
+              alt="Logo Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="/assets/images/logo_pinterest-removebg-preview.png"
+              alt="Logo Pinterest"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="/NavBar.js"></script>
   </body>
 </html>

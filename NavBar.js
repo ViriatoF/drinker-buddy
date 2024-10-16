@@ -172,6 +172,11 @@ connexionBtn.addEventListener("click", function (event) {
       "https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Image.png";
 
     const menuDeProfile = document.getElementById("profileMenu");
+    const description = document.createElement("button");
+    const déconexion = document.createElement("button");
+
+    menuDeProfile.appendChild(description);
+    menuDeProfile.appendChild(déconexion);
 
     localStorage.setItem("isLoggedIn", "true");
   }
