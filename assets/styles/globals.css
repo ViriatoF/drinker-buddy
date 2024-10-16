@@ -1,0 +1,14 @@
+/* Globals */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+.night_mode_body {
+  background-color: rgb(3, 3, 39);
+}
