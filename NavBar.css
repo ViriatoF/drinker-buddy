@@ -1,0 +1,600 @@
+/* ---------------------------------------------------Naviguation--------------------------------------------------- */
+
+nav {
+  display: flex;
+  height: 115px;
+  justify-content: flex-end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(40deg, #e66df6, #a021cd, #1e7ff1, #2917ef);
+}
+
+.Logo {
+  width: 100%;
+  height: 110px;
+  justify-self: flex-start;
+  margin-left: 15px;
+}
+
+.Logo img {
+  width: auto;
+  height: 100px;
+  margin: 7px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 25px;
+}
+
+.Register {
+  width: 120px;
+  height: 34px;
+  border: 0;
+  border-radius: 5px;
+  background: linear-gradient(40deg, #e66df6, #a021cd);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  box-shadow: 1.5px 2px 4px 0 rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.Login {
+  width: 120px;
+  height: 34px;
+  border: 0;
+  border-radius: 5px;
+  background: linear-gradient(40deg, #ffffff, #d5d3d6);
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  box-shadow: 1.5px 2px 4px 0 rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.Profile img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 1.5px 2px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+.Profile {
+  border-radius: 50%;
+}
+
+/* ---------------------------------------------------Popup boutton Register--------------------------------------------------- */
+
+/* Arrière-plan flou */
+
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  display: none;
+}
+
+/* Fenêtre register */
+
+/* image du bar */
+
+.leBar {
+  width: 50%;
+  object-fit: cover;
+  object-position: 75%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* X pour fermer la fenêtre */
+
+.fermer {
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  margin: 0.5rem;
+  z-index: 3;
+  font-size: medium;
+  border: none;
+  background-color: white;
+  color: gray;
+  box-shadow: 0.5px 0.5px 1px 0 rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* inscription */
+
+.register-popup {
+  width: 762px;
+  height: 592px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: flex-end;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.register-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 70%;
+}
+
+.Submit {
+  padding: 10px;
+  background-color: #1900ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 35%;
+}
+
+.social-login {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-login button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.google-login {
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150%;
+}
+
+.google-login img {
+  width: 30px;
+  height: auto;
+  margin-right: 15%;
+}
+.facebook-login img {
+  width: 30px;
+  height: auto;
+  margin-right: 15%;
+}
+.facebook-login {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150%;
+}
+
+/* ---------------------------------------------------Popup boutton Login--------------------------------------------------- */
+
+/* Arrière-plan flou */
+
+.fond-gris {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  display: none;
+}
+
+/* Fenêtre register */
+
+/* image du bar */
+
+.leBar2 {
+  width: 50%;
+  object-fit: cover;
+  object-position: 75%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* X pour fermer la fenêtre */
+
+.close {
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  margin: 0.5rem;
+  z-index: 3;
+  font-size: medium;
+  border: none;
+  background-color: white;
+  color: gray;
+  box-shadow: 0.5px 0.5px 1px 0 rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* connection */
+
+.login-popup {
+  width: 762px;
+  height: 450px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: none;
+  /* display: flex; */
+  justify-content: flex-end;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.login-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 70%;
+}
+
+.envoyer {
+  padding: 10px;
+  background-color: #1900ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 35%;
+}
+
+.social-connect {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-connect button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.google-connect {
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150%;
+}
+
+.google-connect img {
+  width: 30px;
+  height: auto;
+  margin-right: 15%;
+}
+.facebook-connect img {
+  width: 30px;
+  height: auto;
+  margin-right: 15%;
+}
+.facebook-connect {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150%;
+}
+
+/* ---------------------------------------------------Menu déroulan pour Profile non connecté--------------------------------------------------- */
+
+.profile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgb(214, 211, 211);
+  margin: 5px;
+  margin-right: 1rem;
+  border-radius: 15px;
+  background-color: rgb(245, 243, 243);
+  right: 0;
+  /* display: none; */
+}
+
+.profile-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.profile-menu h2 {
+  text-align: center;
+  padding: 0.3rem;
+  box-shadow: inset 0 2px 5px rgba(158, 155, 155, 0.3),
+    inset 0 -2px 5px rgba(167, 163, 163, 0.3);
+  border-radius: 10px;
+  height: 2.2rem;
+  font-size: 1.3rem;
+  margin-top: 0;
+  background-color: white;
+  margin-bottom: 0;
+  color: grey;
+}
+
+.profile-menu ul li {
+  list-style: none;
+}
+.profile-menu ul li button {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border: none;
+  height: 2.5rem;
+  width: 15rem;
+  margin: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.profile-menu ul li button img {
+  height: 1.8rem;
+  width: auto;
+  align-self: flex-start;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+/* ---------------------------------------------------main--------------------------------------------------- */
+
+main {
+  height: 675px;
+  width: 100%;
+}
+
+/* ---------------------------------------------------Footer--------------------------------------------------- */
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(40deg, #e66df6, #a021cd, #1e7ff1, #2917ef);
+}
+
+/* changement de language */
+
+footer select {
+  margin-left: 15px;
+  border: 0;
+  background-color: transparent;
+}
+
+.Langue img {
+  height: 20px;
+  width: auto;
+}
+
+.Langue {
+  display: flex;
+  background: linear-gradient(40deg, #ffffff, #d5d3d6);
+  /*border: 1.5px solid black;*/
+  padding: 6px;
+  margin-left: 20px;
+  box-shadow: 1.5px 2px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* Conditions etc */
+
+.conditions {
+  width: 100%;
+  margin-left: 25%;
+  justify-content: center;
+}
+
+.conditions ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.conditions ul p {
+  margin: 15px;
+  margin-top: 15px;
+}
+
+.conditions p {
+  color: white;
+  text-align: center;
+  margin-bottom: 1px;
+  margin-left: 5%;
+}
+
+.conditions ul p a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Logos des réseaux*/
+
+.Logos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 20px;
+}
+.Logos li {
+  list-style: none;
+}
+
+.Logos li a img {
+  width: 40px;
+  height: auto;
+  margin: 5px;
+}
+
+/* --------------------------------------Effet visuel au passage de la souris-------------------------------------------- */
+
+/* Nav Bar */
+
+/*login*/
+
+.Login:hover {
+  background: linear-gradient(40deg, #d1cfcf, #aeadaf);
+}
+
+/*register*/
+
+.Register:hover {
+  background: linear-gradient(40deg, #c94eda, #8511af);
+}
+
+/* Pop-up du boutton register */
+
+.fermer:hover {
+  color: red;
+  background-color: rgb(240, 239, 239);
+  font-size: 1.1rem;
+}
+
+.google-login:hover {
+  background-color: rgb(240, 239, 239);
+}
+
+.facebook-login:hover {
+  background-color: rgb(240, 239, 239);
+}
+
+.Submit:hover {
+  background-color: rgb(25, 11, 211);
+}
+
+/* Pop-up du boutton Login */
+
+.close:hover {
+  color: red;
+  background-color: rgb(240, 239, 239);
+  font-size: 1.1rem;
+}
+
+.google-connect:hover {
+  background-color: rgb(240, 239, 239);
+}
+
+.facebook-connect:hover {
+  background-color: rgb(240, 239, 239);
+}
+
+.envoyer:hover {
+  background-color: rgb(25, 11, 211);
+}
+
+/*logo de profile*/
+
+.Profile img:hover {
+  border: 1px solid white;
+}
+
+/* menu deroulant du profile non connecté */
+
+.profile-menu ul li button:hover {
+  background-color: rgb(236, 233, 233);
+}
+
+/*footer*/
+
+/*conditions*/
+
+.conditions p a:hover {
+  color: rgb(198, 198, 204);
+  text-decoration: underline;
+}
+
+/* Logos des réseaux */
+
+.Logos li a:hover {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+/* Section de Langue */
+
+.Langue:hover {
+  border: 1px solid white;
+  background: linear-gradient(40deg, #f5f3f3, #ffffff);
+}
