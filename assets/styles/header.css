@@ -10,34 +10,31 @@ header {
 
 #title {
   position: absolute;
-  /* background-color: rgba(249, 244, 244, 0.5); */
   width: 100%;
   top: 40%;
+  /* filter: blur(5px); */
+  background: -webkit-linear-gradient(40deg,
+      #e66df6,
+      #a021cd,
+      #1e7ff1,
+      #2917ef);
 }
 
 H1 {
+  /* position: absolute; */
   margin: 1rem;
-  /* border: 25px solid black; */
   text-align: center;
   filter: drop-shadow(16px 16px 20px #e66df6);
   font-family: "Barriecito";
   font-size: 7rem;
-  background: -webkit-linear-gradient(
-    40deg,
-    #e66df6,
-    #a021cd,
-    #1e7ff1,
-    #2917ef
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 /* Button of header */
 
 #header_buttons {
   position: absolute;
-  width: 55%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -47,10 +44,19 @@ H1 {
   height: 5rem;
 }
 
-.fa-arrow-down {
-  /* position: absolute; */
-  /* background-color: transparent; */
-  height: 5rem;
+#scroll_button {
+  background: -webkit-linear-gradient(40deg,
+      #e66df6,
+      #a021cd,
+      #1e7ff1,
+      #2917ef);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.arrow_color {
+  background-color: white;
+  background-clip: text;
 }
 
 #scroll_button img {
@@ -59,7 +65,6 @@ H1 {
 }
 
 #pegi_button {
-  /* background-color: transparent; */
   border: none;
   padding: 0;
 }

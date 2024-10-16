@@ -1,0 +1,49 @@
+/* Main Css */
+
+main {
+  width: 75vw;
+  margin: auto;
+}
+
+main img {
+  width: 20rem;
+  height: 13rem;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin: 5rem;
+}
+
+#presentation_project {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem auto;
+  gap: 2rem;
+}
+
+#items {
+  display: flex;
+  justify-content: space-around;
+  margin: 10rem 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cards button {
+  border-radius: 5px;
+  border: none;
+  background: -webkit-linear-gradient(40deg,
+      #e66df6,
+      #a021cd,
+      #1e7ff1,
+      #2917ef);
+  color: whitesmoke;
+  font-weight: bolder;
+  height: 2rem;
+}
