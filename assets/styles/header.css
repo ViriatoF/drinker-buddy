@@ -12,22 +12,64 @@ header {
   position: absolute;
   width: 100%;
   top: 40%;
+  /* background: -webkit-linear-gradient(40deg,
+      #e66df660,
+      #9f21cd38,
+      #1e80f150,
+      #2917ef46); */
   /* filter: blur(5px); */
-  background: -webkit-linear-gradient(40deg,
-      #e66df6,
-      #a021cd,
-      #1e7ff1,
-      #2917ef);
+}
+
+/* Style pour le H1 néon */
+
+@keyframes flicker {
+
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #e66df6,
+      0 0 80px #e66df6,
+      0 0 90px #e66df6,
+      0 0 100px #e66df6,
+      0 0 150px #e66df6;
+
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 
 H1 {
-  /* position: absolute; */
   margin: 1rem;
   text-align: center;
   filter: drop-shadow(16px 16px 20px #e66df6);
   font-family: "Barriecito";
   font-size: 7rem;
   color: white;
+  font-weight: 400;
+  text-shadow:
+    0 0 7px #cccbcb,
+    0 0 10px #cccbcb,
+    0 0 21px #ffffff,
+    0 0 42px #e66df6,
+    0 0 82px #e66df6,
+    0 0 92px #e66df6,
+    0 0 102px #e66df6,
+    0 0 151px #e66df6;
+  background-color: transparent;
+  animation: flicker 1.5s infinite alternate;
 }
 
 /* Button of header */
@@ -57,11 +99,21 @@ H1 {
 .arrow_color {
   background-color: white;
   background-clip: text;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #e66df6,
+    0 0 82px #e66df6,
+    0 0 92px #e66df6,
+    0 0 102px #e66df6,
+    0 0 151px #e66df6;
+  transition: all 0.8s;
 }
 
 #scroll_button img {
-  height: 10rem;
-  width: 10rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 #pegi_button {
@@ -69,7 +121,17 @@ H1 {
   padding: 0;
 }
 
+#pegi_button:hover {
+  filter: blur(2px);
+}
+
 #pegi_button img {
   height: 3rem;
   width: 3rem;
+}
+
+#nightDayMode {
+  position: absolute;
+  top: 0;
+  right: 1rem;
 }

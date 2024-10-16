@@ -3,17 +3,24 @@
 main {
   width: 75vw;
   margin: auto;
+  /* z-index: 2; */
 }
 
 main img {
   width: 20rem;
   height: 13rem;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 h2 {
   text-align: center;
-  margin: 5rem;
+  margin: 10rem;
+  font-size: 3rem;
+  color: white;
+  font-family: "Barriecito";
+  background-color: #a021cd;
+  border-radius: 35px 0 35px 0;
 }
 
 #presentation_project {
@@ -29,10 +36,13 @@ h2 {
   margin: 10rem 0;
 }
 
+/* Style des cards */
+
 .cards {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
 }
 
 .cards button {
@@ -46,4 +56,13 @@ h2 {
   color: whitesmoke;
   font-weight: bolder;
   height: 2rem;
+}
+
+/* Au survol du boutton, modification de la couleur du bouton */
+
+.cards button:hover {
+  border: #2917ef solid 2px;
+  background: none;
+  color: #2917ef;
+  cursor: pointer;
 }
