@@ -134,4 +134,5 @@ H1 {
   position: absolute;
   top: 0;
   right: 1rem;
+  position: fixed;
 }

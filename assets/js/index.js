@@ -29,18 +29,14 @@ function scrollToNav() {
 mainArrow.addEventListener("click", scrollToNav);
 
 function switchDark(){
-  body.classList.add("night_mode_body");
+  body.classList.toggle("night_mode_body");
   nightDayButton.textContent = "Light";
-  darkMode = true;
-  console.log(darkMode);
   
 }
 
 function switchLight(){
-  body.classList.remove("night_mode_body");
+  body.classList.toggle("night_mode_body");
   nightDayButton.textContent = "Dark";
-  darkMode = false;
-  console.log(darkMode);
 }
 
 
