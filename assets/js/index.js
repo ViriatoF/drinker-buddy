@@ -1,18 +1,18 @@
-
-
 const mainArrow = document.getElementById("scroll_button");
 const arrow = document.querySelector("i");
 const buttonMain = document.querySelector("button");
 const nightDayButton = document.querySelector("#nightDayMode");
 const body = document.querySelector("body");
-let darkMode = false;
+const arrowUp = document.getElementById("circle");
+const descText = document.querySelector(".description");
+const titleDarkMode = document.querySelector("second_title");
 
 arrow.addEventListener("mouseover", ()=>{
   arrow.classList.add("arrow_color");
 })
 
 arrow.addEventListener("mouseleave", ()=>{
-  console.log("couleur");
+  // console.log("couleur");
   arrow.classList.remove("arrow_color");
 })
 
@@ -28,21 +28,42 @@ function scrollToNav() {
 
 mainArrow.addEventListener("click", scrollToNav);
 
+
+/* Function who tranform the body in dark mode when you click on the toggle button*/
 function switchDark(){
+  
   body.classList.toggle("night_mode_body");
-  nightDayButton.textContent = "Light";
+  nightDayButton.textContent = "Dark";
+  descText.classList.remove("text_darknight");
+  titleDarkMode.classList.remove("home_main_darkmode");
+  
+  if(body.classList.contains("night_mode_body")){
+
+    titleDarkMode.classList.add("home_main_darkmode");
+    descText.classList.add("text_darknight");
+    arrowUp.classList.add("circle_arrow");
+    nightDayButton.textContent = "light";
+  }
   
 }
 
-function switchLight(){
-  body.classList.toggle("night_mode_body");
-  nightDayButton.textContent = "Dark";
-}
-
-
+/* Event for activate toggle dark/light mode*/
 nightDayButton.addEventListener("click",switchDark);
 
-if(darkMode==true){
+/*Change color of circle arrow up on top of the website*/ 
 
-  nightDayButton.addEventListener("click",switchLight);
+arrowUp.addEventListener("mouseover", ()=>{
+  arrowUp.classList.add("circle_arrow");
+})
+arrowUp.addEventListener("mouseleave", ()=>{
+  arrowUp.classList.remove("circle_arrow");
+})
+
+/** Event for return of the top of the page */
+
+function returnToTheTop(){
+  return window.scrollToNav();
 }
+
+arrowUp.addEventListener("click", returnToTheTop);
+
