@@ -1,12 +1,12 @@
 /* Main Css */
 
-main {
+.home_main {
   width: 75vw;
   margin: auto;
   /* z-index: 2; */
 }
 
-main img {
+.home_main img {
   width: 20rem;
   height: 13rem;
   border-radius: 5px;
@@ -17,10 +17,18 @@ main img {
   text-align: center;
   margin: 4rem;
   font-size: 3rem;
-  color: white;
+  color: #a021cd;
   font-family: "Barriecito";
-  background-color: #a021cd;
-  border-radius: 35px 0 35px 0;
+}
+
+.home_main_darkmode {
+  color: white;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e66df6,
+    0 0 82px #e66df6, 0 0 92px #e66df6, 0 0 102px #e66df6, 0 0 151px #e66df6;
+}
+
+.description p {
+  font-size: 1.3rem;
 }
 
 .description p {
@@ -33,6 +41,19 @@ main img {
   margin: 1rem auto;
   gap: 2rem;
   padding: 3rem;
+}
+
+.text_darknight {
+  color: white;
+  /* text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #e66df6,
+    0 0 82px #e66df6,
+    0 0 92px #e66df6,
+    0 0 102px #e66df6,
+    0 0 151px #e66df6; */
 }
 
 #items {
@@ -72,6 +93,21 @@ main img {
   background: none;
   color: #2917ef;
   cursor: pointer;
+}
+
+.button_container {
+  position: relative;
+  left: 109%;
+  bottom: 2rem;
+  width: 3rem;
+  display: block;
+}
+
+.circle_arrow {
+  color: #a021cd;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e66df6,
+    0 0 82px #e66df6, 0 0 92px #e66df6, 0 0 102px #e66df6, 0 0 151px #e66df6;
+  transition: all 0.8s;
 }
 
 /* lien boutton js */

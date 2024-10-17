@@ -1,9 +1,11 @@
 const mainArrow = document.getElementById("scroll_button");
 const arrow = document.querySelector("i");
 const buttonMain = document.querySelector("button");
-// const nightDayButton = document.querySelector("#nightDayMode");
-// const body = document.querySelector("body");
-// let darkMode = false;
+const nightDayButton = document.querySelector("#nightDayMode");
+const body = document.querySelector("body");
+const arrowUp = document.getElementById("circle");
+const descText = document.querySelector(".description");
+const titleDarkMode = document.querySelector("second_title");
 
 arrow.addEventListener("mouseover", () => {
   arrow.classList.add("arrow_color");
@@ -67,7 +69,19 @@ bouttonMode.addEventListener("click", toggleMode);
 
 // nightDayButton.addEventListener("click",switchDark);
 
-// if(darkMode==true){
+/*Change color of circle arrow up on top of the website*/
 
-//   nightDayButton.addEventListener("click",switchLight);
-// }
+arrowUp.addEventListener("mouseover", () => {
+  arrowUp.classList.add("circle_arrow");
+});
+arrowUp.addEventListener("mouseleave", () => {
+  arrowUp.classList.remove("circle_arrow");
+});
+
+/** Event for return of the top of the page */
+
+function returnToTheTop() {
+  return window.scrollToNav();
+}
+
+arrowUp.addEventListener("click", returnToTheTop);
