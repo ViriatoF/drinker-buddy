@@ -1,11 +1,17 @@
 nav h1 {
   text-align: center;
   line-height: 50px;
+  font-size: 10ch;
+  margin-top: auto;
 }
 
 nav img {
   height: 100px;
   width: 120px;
+}
+
+form input {
+  border-radius: 15px;
 }
 section img id {
   height: 50px;
@@ -42,8 +48,10 @@ img {
 }
 
 .container img {
-  height: 150px;
-  width: 150px;
+  height: 400px;
+  width: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .child-container {
@@ -76,7 +84,9 @@ form input {
 main form {
   text-align: center;
 }
-
+main img {
+  border-radius: 30px;
+}
 button {
   position: relative;
   display: right;
