@@ -1,68 +1,64 @@
 /* Main Css */
 
 main {
-  width: 75vw;
-  margin: auto;
-  /* z-index: 2; */
+	width: 75vw;
+	margin: auto;
+	/* z-index: 2; */
 }
 
 main img {
-  width: 20rem;
-  height: 13rem;
-  border-radius: 5px;
-  object-fit: cover;
+	width: 20rem;
+	height: 13rem;
+	border-radius: 5px;
+	object-fit: cover;
 }
 
 h2 {
-  text-align: center;
-  margin: 10rem;
-  font-size: 3rem;
-  color: white;
-  font-family: "Barriecito";
-  background-color: #a021cd;
-  border-radius: 35px 0 35px 0;
+	text-align: center;
+	margin: 10rem;
+	font-size: 3rem;
+	color: white;
+	font-family: "Barriecito";
+	background-color: #a021cd;
+	border-radius: 35px 0 35px 0;
 }
 
 #presentation_project {
-  display: flex;
-  flex-direction: row;
-  margin: 5rem auto;
-  gap: 2rem;
+	display: flex;
+	flex-direction: row;
+	margin: 5rem auto;
+	gap: 2rem;
 }
 
 #items {
-  display: flex;
-  justify-content: space-around;
-  margin: 10rem 0;
+	display: flex;
+	justify-content: space-around;
+	margin: 10rem 0;
 }
 
 /* Style des cards */
 
 .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 .cards button {
-  border-radius: 5px;
-  border: none;
-  background: -webkit-linear-gradient(40deg,
-      #e66df6,
-      #a021cd,
-      #1e7ff1,
-      #2917ef);
-  color: whitesmoke;
-  font-weight: bolder;
-  height: 2rem;
+	border-radius: 5px;
+	border: none;
+	background: -webkit-linear-gradient(40deg, #e66df6, #a021cd, #1e7ff1, #2917ef);
+	color: whitesmoke;
+	font-weight: bolder;
+	height: 2rem;
+	width: 100%;
 }
 
 /* Au survol du boutton, modification de la couleur du bouton */
 
 .cards button:hover {
-  border: #2917ef solid 2px;
-  background: none;
-  color: #2917ef;
-  cursor: pointer;
+	border: #2917ef solid 2px;
+	background: none;
+	color: #2917ef;
+	cursor: pointer;
 }
