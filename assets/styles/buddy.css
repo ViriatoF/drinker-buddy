@@ -651,10 +651,14 @@ footer {
 		display: flex;
 		flex-direction: column;
 		margin-top: 10%;
+		height: 100%;
 	}
 	/* profil 1  */
 	.item-a {
 		height: 100%;
+	}
+	.text-profil1 {
+		font-size: 20px;
 	}
 	/* profil 2 */
 	.item-b {
@@ -682,21 +686,22 @@ footer {
 
 	.text-profil3 {
 		margin: 15px;
+		font-size: 20px;
 		word-spacing: 1px;
 	}
 
 	.button-3-boisson {
-		height: 20px;
+		height: 35px;
 		width: 62%;
 		border-radius: 20px;
 	}
 	.button-3-bar {
-		height: 20px;
+		height: 35px;
 		width: 70%;
 		border-radius: 20px;
 	}
 	.button-3-tapas {
-		height: 20px;
+		height: 35px;
 		width: 66%;
 		border-radius: 20px;
 	}
@@ -724,20 +729,21 @@ footer {
 
 	.text-profil4 {
 		margin: 15px;
+		font-size: 20px;
 	}
 
 	.button-4-boisson {
-		height: 20px;
+		height: 35px;
 		width: 62%;
 		border-radius: 20px;
 	}
 	.button-4-bar {
-		height: 20px;
+		height: 35px;
 		width: 70%;
 		border-radius: 20px;
 	}
 	.button-4-tapas {
-		height: 20px;
+		height: 35px;
 		width: 66%;
 		border-radius: 20px;
 	}
@@ -766,6 +772,7 @@ footer {
 
 	.text-profil5 {
 		margin: 15px;
+		font-size: 20px;
 	}
 
 	.button-5-boisson {
@@ -794,7 +801,7 @@ footer {
 	}
 	.text-profil6 {
 		margin: 16px;
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	.button-6-boisson {
@@ -823,7 +830,7 @@ footer {
 
 	.text-profil7 {
 		margin: 16px;
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	.button-7-boisson {
@@ -837,11 +844,5 @@ footer {
 	.button-7-tapas {
 		width: 66%;
 		border-radius: 20px;
-	}
-
-	/* Footer button */
-
-	footer {
-		position: relative;
 	}
 }
