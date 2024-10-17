@@ -31,18 +31,18 @@ mainArrow.addEventListener("click", scrollToNav);
 
 /* Function who tranform the body in dark mode when you click on the toggle button*/
 function switchDark(){
-  
+
   body.classList.toggle("night_mode_body");
+  // descText.classList.remove("text_darknight");
+  // titleDarkMode.classList.remove("home_main_darkmode");
   nightDayButton.textContent = "Dark";
-  descText.classList.remove("text_darknight");
-  titleDarkMode.classList.remove("home_main_darkmode");
   
   if(body.classList.contains("night_mode_body")){
 
-    titleDarkMode.classList.add("home_main_darkmode");
-    descText.classList.add("text_darknight");
-    arrowUp.classList.add("circle_arrow");
-    nightDayButton.textContent = "light";
+    // titleDarkMode.classList.add("home_main_darkmode");
+    nightDayButton.textContent = "Light";
+    // descText.classList.add("text_darknight");
+    // arrowUp.classList.add("circle_arrow");
   }
   
 }
