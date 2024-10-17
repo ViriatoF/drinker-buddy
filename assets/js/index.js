@@ -1,8 +1,8 @@
 const mainArrow = document.getElementById("scroll_button");
 const arrow = document.querySelector("i");
 const buttonMain = document.querySelector("button");
-const nightDayButton = document.querySelector("#nightDayMode");
-const body = document.querySelector("body");
+// const nightDayButton = document.querySelector("#nightDayMode");
+// const body = document.querySelector("body");
 const arrowUp = document.getElementById("circle");
 const descText = document.querySelector(".description");
 const titleDarkMode = document.querySelector("second_title");
@@ -12,7 +12,7 @@ arrow.addEventListener("mouseover", () => {
 });
 
 arrow.addEventListener("mouseleave", () => {
-  console.log("couleur");
+  // console.log("couleur");
   arrow.classList.remove("arrow_color");
 });
 
