@@ -13,7 +13,7 @@
   object-fit: cover;
 }
 
-.titre {
+.title {
   text-align: center;
   margin: 4rem;
   font-size: 3rem;
@@ -21,8 +21,7 @@
   font-family: "Barriecito";
 }
 
-.home_main_darkmode {
-  color: white;
+.home_title_darkmode {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e66df6,
     0 0 82px #e66df6, 0 0 92px #e66df6, 0 0 102px #e66df6, 0 0 151px #e66df6;
 }
@@ -61,6 +60,7 @@
   justify-content: space-around;
   padding: 3rem;
   border-top: 1px solid rgb(187, 182, 182);
+  margin: 2rem 0;
 }
 
 /* Style des cards */
@@ -74,13 +74,11 @@
 .cards button {
   border-radius: 5px;
   border: none;
-  background: -webkit-linear-gradient(
-    40deg,
-    #e66df6,
-    #a021cd,
-    #1e7ff1,
-    #2917ef
-  );
+  background: -webkit-linear-gradient(40deg,
+      #e66df6,
+      #a021cd,
+      #1e7ff1,
+      #2917ef);
   color: whitesmoke;
   font-weight: bolder;
   height: 2rem;
