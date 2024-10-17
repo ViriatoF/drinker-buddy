@@ -1,52 +1,50 @@
 /* Main Css */
 
 .home_main {
-	width: 75vw;
-	margin: auto;
-	/* z-index: 2; */
+  width: 75vw;
+  margin: auto;
+  /* z-index: 2; */
 }
 
 .home_main img {
-	width: 20rem;
-	height: 13rem;
-	border-radius: 5px;
-	object-fit: cover;
+  width: 20rem;
+  height: 13rem;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
-.titre {
-	text-align: center;
-	margin: 4rem;
-	font-size: 3rem;
-	color: #a021cd;
-	font-family: "Barriecito";
+.title {
+  text-align: center;
+  margin: 4rem;
+  font-size: 3rem;
+  color: #a021cd;
+  font-family: "Barriecito";
 }
 
-.home_main_darkmode {
-	color: white;
-	text-shadow:
-		0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e66df6,
-		0 0 82px #e66df6, 0 0 92px #e66df6, 0 0 102px #e66df6, 0 0 151px #e66df6;
-}
-
-.description p {
-	font-size: 1.3rem;
+.home_title_darkmode {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e66df6,
+    0 0 82px #e66df6, 0 0 92px #e66df6, 0 0 102px #e66df6, 0 0 151px #e66df6;
 }
 
 .description p {
-	font-size: 1.3rem;
+  font-size: 1.3rem;
+}
+
+.description p {
+  font-size: 1.3rem;
 }
 
 #presentation_project {
-	display: flex;
-	flex-direction: row;
-	margin: 1rem auto;
-	gap: 2rem;
-	padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem auto;
+  gap: 2rem;
+  padding: 3rem;
 }
 
 .text_darknight {
-	color: white;
-	/* text-shadow:
+  color: white;
+  /* text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
@@ -58,67 +56,70 @@
 }
 
 #items {
-	display: flex;
-	justify-content: space-around;
-	padding: 3rem;
-	border-top: 1px solid rgb(187, 182, 182);
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  border-top: 1px solid rgb(187, 182, 182);
+  margin: 2rem 0;
 }
 
 /* Style des cards */
 
 .cards {
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .cards button {
-	border-radius: 5px;
-	border: none;
-	background: -webkit-linear-gradient(40deg, #e66df6, #a021cd, #1e7ff1, #2917ef);
-	color: whitesmoke;
-	font-weight: bolder;
-	height: 2rem;
-	width: 100%;
+  border-radius: 5px;
+  border: none;
+  background: -webkit-linear-gradient(40deg,
+      #e66df6,
+      #a021cd,
+      #1e7ff1,
+      #2917ef);
+  color: whitesmoke;
+  font-weight: bolder;
+  height: 2rem;
 }
 
 /* Au survol du boutton, modification de la couleur du bouton */
 
 .cards button:hover {
-	border: #2917ef solid 2px;
-	background: none;
-	color: #2917ef;
-	cursor: pointer;
+  border: #2917ef solid 2px;
+  background: none;
+  color: #2917ef;
+  cursor: pointer;
 }
 
 .button_container {
-	position: relative;
-	left: 109%;
-	bottom: 2rem;
-	width: 3rem;
-	display: block;
+  position: relative;
+  left: 109%;
+  bottom: 2rem;
+  width: 3rem;
+  display: block;
 }
 
 .circle_arrow {
-	color: #a021cd;
-	text-shadow:
-		0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e66df6,
-		0 0 82px #e66df6, 0 0 92px #e66df6, 0 0 102px #e66df6, 0 0 151px #e66df6;
-	transition: all 0.8s;
+  color: #a021cd;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #e66df6,
+    0 0 82px #e66df6, 0 0 92px #e66df6, 0 0 102px #e66df6, 0 0 151px #e66df6;
+  transition: all 0.8s;
 }
 
 /* lien boutton js */
 
 body {
-	transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .night-mode {
-	background-color: black;
-	color: white;
+  background-color: black;
+  color: white;
 }
 
 .day-mode {
-	background-color: white;
-	color: black;
+  background-color: white;
+  color: black;
 }
