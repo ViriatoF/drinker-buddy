@@ -7,11 +7,11 @@
     left: 0%;
   }
 
-  25% {
+  30% {
     left: -100%;
   }
 
-  45% {
+  40% {
     left: -100%;
   }
 
@@ -19,16 +19,20 @@
     left: -200%;
   }
 
-  70% {
+  60% {
     left: -200%;
   }
 
-  75% {
+  70% {
     left: -300%;
   }
 
-  95% {
+  80% {
     left: -300%;
+  }
+
+  90% {
+    left: -400%;
   }
 
   100% {
@@ -49,7 +53,7 @@
 #slider figure {
   display: flex;
   position: relative;
-  width: 400%;
+  width: 500%;
   margin: 0;
   left: 0;
   animation: 30s slidy infinite;
