@@ -595,9 +595,12 @@ footer {
 	padding: 10px;
 }
 
-.buttonBar {
-	margin: 10% 120px auto;
+footer a {
+	margin: 10% 170px auto;
 	margin-bottom: 20px;
+}
+
+.buttonBar {
 	width: 200px;
 	height: 50px;
 	cursor: pointer;
@@ -854,5 +857,12 @@ footer {
 	.button-7-tapas {
 		width: 66%;
 		border-radius: 20px;
+	}
+	footer {
+		justify-content: center;
+	}
+
+	footer a {
+		margin-left: 10%;
 	}
 }
