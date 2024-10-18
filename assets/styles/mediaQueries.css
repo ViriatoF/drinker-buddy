@@ -5,6 +5,10 @@
     margin: 3rem 0;
   }
 
+  main {
+    margin: 2rem auto;
+  }
+
   #items {
     flex-direction: column;
     gap: 2rem;
@@ -14,6 +18,10 @@
   #presentation_project {
     flex-direction: column;
     padding: 3rem 0;
+  }
+
+  #presentation_project p {
+    width: auto;
   }
 
   #presentation_project img {
