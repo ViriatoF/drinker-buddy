@@ -112,6 +112,8 @@ button {
   display: right;
   float: right;
   background-color: aqua;
+  height: 30px;
+  border-radius: 20px;
 }
 
 .search {
@@ -126,10 +128,17 @@ p {
   text-align: center;
   width: 500px;
   margin-left: auto;
+  font-size: 3ch;
 }
 
+button{
+
+
+}
 @media screen and (max-width: 500px) {
   body {
     width: 90%;
   }
 }
+
+
