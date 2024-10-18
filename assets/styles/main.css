@@ -82,6 +82,7 @@
   color: whitesmoke;
   font-weight: bolder;
   height: 2rem;
+  width: 100%;
 }
 
 /* Au survol du boutton, modification de la couleur du bouton */
