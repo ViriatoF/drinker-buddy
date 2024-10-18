@@ -123,61 +123,54 @@ document.addEventListener("click", function (event) {
   }
 });
 
-/* --------------------------Enregistrement des données-----------------------------------*/
+/* -------------------------------- fenetre d'abonnement -----------------------------------------*/
 
-/* Inscription */
+const fonabonnement = document.getElementById("fond");
+const fondpopup = document.getElementById("Abonnement-popup");
+const un = document.getElementById("un");
+const cinque = document.getElementById("cinque");
+const vcinque = document.getElementById("vcinque");
+const cent = document.getElementById("cent");
+const close3 = document.getElementById("close3");
+const bouttonAbonnement = document.getElementById("Abonnement");
 
-const inscriptionBtn = document.getElementById("show-popup");
-
-inscriptionBtn.addEventListener("click", function (event) {
+un.addEventListener("click", function (event) {
   event.preventDefault();
-
-  const emailInput = document.getElementById("emailInscription").value;
-  const passwordInput = document.getElementById("passwordInscription").value;
-  const userNameInput = document.getElementById("userNameInscription").value;
-
-  if (emailInput && passwordInput) {
-    const user = {
-      username: userNameInput,
-      email: emailInput,
-      password: passwordInput,
-    };
-
-    localStorage.setItem("user", JSON.stringify(user));
-
-    alert("Inscription réussie !");
-  }
+  alert("Un peut radin comme même");
+});
+cinque.addEventListener("click", function (event) {
+  event.preventDefault();
+  alert("Merci, cela nous touche beaucoup !");
+});
+vcinque.addEventListener("click", function (event) {
+  event.preventDefault();
+  alert("On à un nouveau sauveur de Koala ! !");
+});
+cent.addEventListener("click", function (event) {
+  event.preventDefault();
+  alert("Tu veux la mort de Nicolas 100% ! ! !");
+});
+close3.addEventListener("click", function (event) {
+  event.preventDefault();
+  fonabonnement.style.display = "none";
+  fondpopup.style.display = "none";
+});
+bouttonAbonnement.addEventListener("click", function () {
+  fonabonnement.style.display = "block";
+  fondpopup.style.display = "flex";
 });
 
-/* Vérification des donées quand on se connect*/
+const fonAide = document.getElementById("fond2");
+const fondpopup2 = document.getElementById("Aide-popup");
+const bouttonAide = document.getElementById("Aide");
+const close4 = document.getElementById("close4");
 
-const connexionBtn = document.getElementById("voir-popup");
-
-connexionBtn.addEventListener("click", function (event) {
+close4.addEventListener("click", function (event) {
   event.preventDefault();
-
-  const emailInput = document.getElementById("adressmail").value;
-  const passwordInput = document.getElementById("motdepasse").value;
-
-  const storedUser = JSON.parse(localStorage.getItem("user"));
-
-  if (
-    storedUser &&
-    emailInput === storedUser.email &&
-    passwordInput === storedUser.password
-  ) {
-    alert("Connexion réussie !");
-
-    bouttonProfile.src =
-      "https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Image.png";
-
-    const menuDeProfile = document.getElementById("profileMenu");
-    const description = document.createElement("button");
-    const déconexion = document.createElement("button");
-
-    menuDeProfile.appendChild(description);
-    menuDeProfile.appendChild(déconexion);
-
-    localStorage.setItem("isLoggedIn", "true");
-  }
+  fonAide.style.display = "none";
+  fondpopup2.style.display = "none";
+});
+bouttonAide.addEventListener("click", function () {
+  fonAide.style.display = "block";
+  fondpopup2.style.display = "flex";
 });
