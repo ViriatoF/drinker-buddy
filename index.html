@@ -1,392 +1,285 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Authors" content="Timothé, Julien, Lucas et Vito" />
-    <meta
-      name="Description"
-      content="Site créer pour rapprocher les gens et faire des rencontres autour d'un verre"
-    />
-    <link rel="stylesheet" href="/assets/styles/index.css" />
-    <link rel="stylesheet" href="/NavBar.css" />
-    <script
-      src="https://kit.fontawesome.com/316c594f4f.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Drinker Buddy</title>
-  </head>
-  <body id="lebody">
-    <header>
-      <section id="slider">
-        <figure>
-          <img
-            src="/assets/images/bar convivial.png"
-            alt="Un bar dans la nuit"
-            class="carousel_img"
-          />
-          <img
-            src="/assets/images/barDrinkerBuddy.png"
-            alt="Un bar de nuit sous la pluie"
-            class="carousel_img"
-          />
-          <img
-            src="/assets/images/oktoberfest-celebration-with-beer-still-life.jpg"
-            alt="Une belle pinte de bière blonde"
-            class="carousel_img"
-          />
-          <img
-            src="/assets/images/Koala-Alcolique.png"
-            alt="Oh! un koala"
-            class="carousel_img"
-          />
-          <img
-            src="/assets/images/people-celebrating-party.jpg"
-            alt="Des gens qui font la fête"
-            class="carousel_img"
-          />
-        </figure>
-      </section>
 
-      <section id="title">
-        <h1>Drinker buddy!</h1>
-      </section>
-      <section id="header_buttons">
-        <div id="scroll_button">
-          <i class="fa-solid fa-arrow-down fa-6x"></i>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Authors" content="Timothé, Julien, Lucas et Vito" />
+  <meta name="Description" content="Site créer pour rapprocher les gens et faire des rencontres autour d'un verre" />
+  <link rel="stylesheet" href="/assets/styles/index.css" />
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico" />
+  <script src="https://kit.fontawesome.com/316c594f4f.js" crossorigin="anonymous"></script>
+  <title>Drinker Buddy</title>
+</head>
 
-        <a href="https://www.alcool-info-service.fr/" id="pegi_button"
-          ><img src="/assets/images/PEGI_18.svg.png" alt=""
-        /></a>
-      </section>
+<body id="lebody">
+  <header>
+    <section id="slider">
+      <figure>
+        <img src="/assets/images/bar convivial.jpg" alt="Un bar dans la nuit" class="carousel_img" />
+        <img src="/assets/images/barDrinkerBuddy.jpg" alt="Un bar de nuit sous la pluie" class="carousel_img" />
+        <img src="/assets/images/oktoberfest-celebration-with-beer-still-life.jpg" alt="Une belle pinte de bière blonde"
+          class="carousel_img" />
+        <img src="/assets/images/Koala-Alcolique.jpg" alt="Oh! un koala" class="carousel_img" />
+        <img src="/assets/images/celebration-oktoberfest-with-lots-beer.jpg" alt="Des gens qui font la fête"
+          class="carousel_img" />
+      </figure>
+    </section>
 
-      <button id="nightDayMode">Day</button>
-    </header>
-    <nav>
-      <a href="" class="Logo">
-        <img
-          src="/assets/images/Logo DRINKER BUDDY.png"
-          alt="Logo de notre site Drinker Buddy"
-      /></a>
+    <section id="title">
+      <h1>Drinker buddy!</h1>
+    </section>
+    <section id="header_buttons">
+      <div id="scroll_button">
+        <i class="fa-solid fa-arrow-down fa-6x"></i>
+      </div>
 
-      <ul>
-        <li>
-          <button class="Login" id="voir-popup">Login</button>
-        </li>
-        <li>
-          <button class="Register" id="show-popup">Register</button>
-        </li>
-        <li>
-          <a href="" class="Profile"
-            ><img
-              id="bouttonProfileNC"
-              src="/assets/images/profile_boutton_blanc-removebg-preview.png"
-              alt="Logo de Profile"
-          /></a>
-        </li>
-      </ul>
-    </nav>
+      <a href="https://www.alcool-info-service.fr/" id="pegi_button"><img src="/assets/images/PEGI_18.svg.png"
+          alt="" /></a>
+    </section>
 
-    <!-- fenêtre d'ouverture Register -->
+    <button id="nightDayMode">Day</button>
+  </header>
+  <nav>
+    <a href="" class="Logo">
+      <img src="/assets/images/Logo DRINKER BUDDY.png" alt="Logo de notre site Drinker Buddy" /></a>
 
-    <div class="background-blur" id="blur-background"></div>
+    <ul>
+      <li>
+        <button class="Login" id="voir-popup">Login</button>
+      </li>
+      <li>
+        <button class="Register" id="show-popup">Register</button>
+      </li>
+      <li>
+        <a href="" class="Profile"><img id="bouttonProfileNC"
+            src="/assets/images/profile_boutton_blanc-removebg-preview.png" alt="Logo de Profile" /></a>
+      </li>
+    </ul>
+  </nav>
 
-    <div class="register-popup" id="register-popup">
-      <img
-        class="leBar"
-        src="/assets/images/bar.jpg"
-        alt="Inscrivez-vous et profiter d'un vers avec vos amis"
-      />
-      <form class="register-form" id="registerForm">
-        <button class="fermer">X</button>
-        <h2>Register</h2>
-        <input id="username" type="text" placeholder="User name" required />
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Address mail"
-          required
-        />
-        <input id="password" type="password" placeholder="Password" required />
-        <input type="password" placeholder="Confirm Password" required />
-        <button class="Submit" type="submit">Submit</button>
-        <p id="pDeRegister">
-          Already Registred ? Login <a href="" class="directionLogin">here</a>.
+  <!-- fenêtre d'ouverture Register -->
+
+  <div class="background-blur" id="blur-background"></div>
+
+  <div class="register-popup" id="register-popup">
+    <img class="leBar" src="/assets/images/bar.jpg" alt="Inscrivez-vous et profiter d'un vers avec vos amis" />
+    <form class="register-form" id="registerForm">
+      <button class="fermer">X</button>
+      <h2>Register</h2>
+      <input id="username" type="text" placeholder="User name" required />
+      <input id="email" name="email" type="email" placeholder="Address mail" required />
+      <input id="password" type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <button class="Submit" type="submit">Submit</button>
+      <p id="pDeRegister">
+        Already Registred ? Login <a href="" class="directionLogin">here</a>.
+      </p>
+      <div class="social-login">
+        <button class="google-login">
+          <img src="/assets/images/Logo Google.png" alt="Logo de Google" />Continue with Google
+        </button>
+        <button class="facebook-login">
+          <img src="/assets/images/logo_facebook_sans_contour-removebg-preview.png" alt="Logo de Facebook" />Continue
+          with Facebook
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- fenêtre d'ouverture Login -->
+
+  <div class="fond-gris" id="fond-gris"></div>
+
+  <div class="login-popup" id="login-popup">
+    <img class="leBar2" src="/assets/images/barDrinkerBuddy.png"
+      alt="Inscrivez-vous et profiter d'un vers avec vos amis" />
+    <form class="login-form" id="loginForm">
+      <button class="close">X</button>
+      <h2>Login</h2>
+      <input id="email" type="email" name="email" placeholder="Address mail" required />
+      <input id="password" type="password" name="password" placeholder="Password" required />
+      <button class="envoyer" type="submit">Submit</button>
+      <p id="pDeLogin">
+        Not yet Registred ? Do it
+        <a href="" class="directionRegister">here</a>.
+      </p>
+      <div class="social-connect">
+        <button class="google-connect">
+          <img src="/assets/images/Logo Google.png" alt="Logo de Google" />Continue with Google
+        </button>
+        <button class="facebook-connect">
+          <img src="/assets/images/logo_facebook_sans_contour-removebg-preview.png" alt="Logo de Facebook" />Continue
+          with Facebook
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- menu déroulant pour le profile -->
+
+  <div class="profile-menu" id="profileMenu">
+    <h2 id="pseudo">Mon Profile</h2>
+    <ul>
+      <li>
+        <button id="Aide">
+          <img src="/assets/images/Logo_Aide-removebg-preview.png" alt="Logo du menu Aide" />Aide
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="/assets/images/Logo_Paramètre-removebg-preview.png" alt="Logo du menu Paramètres" />Paramètres
+        </button>
+      </li>
+      <li>
+        <button id="Abonnement">
+          <img src="/assets/images/Logo_Abonnement-removebg-preview.png" alt="Logo du menu Abonnement" />Abonnement
+        </button>
+      </li>
+      <li>
+        <button id="Description">
+          <img src="/assets/images/description-removebg-preview.png" alt="Logo du menu Description" />Description
+        </button>
+      </li>
+      <li>
+        <button id="sedéconecter">
+          <img src="/assets/images/Logo_Déconnection-removebg-preview.png" alt="Logo du menu pour se déconnecter" />Se
+          déconnecter
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Abonnement = don pour les pauvres Koalas maltraités par Nico -->
+
+  <div class="fond" id="fond"></div>
+
+  <div class="Abonnement-popup" id="Abonnement-popup">
+    <img class="koala" src="/assets/images/pauvre-koala.png" alt="Faite un don pour ses pauvres Koalas maltraités" />
+
+    <form class="Abonnement-form" id="AbonnementForm">
+      <button class="close3" id="close3">X</button>
+      <section class="text">
+        <h2>Faite un DON !!!</h2>
+        <h3>
+          Sauvez ses pauvres Koalas victimes de maltraitances humaines !!
+        </h3>
+        <p>
+          regarder ce pauvre Koala sur l'image, ne vous donne t-il pas envie
+          de faire un don pour lui? Faites le bon choix !!
         </p>
-        <div class="social-login">
-          <button class="google-login">
-            <img
-              src="/assets/images/Logo Google.png"
-              alt="Logo de Google"
-            />Continue with Google
-          </button>
-          <button class="facebook-login">
-            <img
-              src="/assets/images/logo_facebook_sans_contour-removebg-preview.png"
-              alt="Logo de Facebook"
-            />Continue with Facebook
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <!-- fenêtre d'ouverture Login -->
-
-    <div class="fond-gris" id="fond-gris"></div>
-
-    <div class="login-popup" id="login-popup">
-      <img
-        class="leBar2"
-        src="/assets/images/barDrinkerBuddy.png"
-        alt="Inscrivez-vous et profiter d'un vers avec vos amis"
-      />
-      <form class="login-form" id="loginForm">
-        <button class="close">X</button>
-        <h2>Login</h2>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="Address mail"
-          required
-        />
-        <input
-          id="password"
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-        />
-        <button class="envoyer" type="submit">Submit</button>
-        <p id="pDeLogin">
-          Not yet Registred ? Do it
-          <a href="" class="directionRegister">here</a>.
-        </p>
-        <div class="social-connect">
-          <button class="google-connect">
-            <img
-              src="/assets/images/Logo Google.png"
-              alt="Logo de Google"
-            />Continue with Google
-          </button>
-          <button class="facebook-connect">
-            <img
-              src="/assets/images/logo_facebook_sans_contour-removebg-preview.png"
-              alt="Logo de Facebook"
-            />Continue with Facebook
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <!-- menu déroulant pour le profile -->
-
-    <div class="profile-menu" id="profileMenu">
-      <h2 id="pseudo">Mon Profile</h2>
-      <ul>
-        <li>
-          <button id="Aide">
-            <img
-              src="/assets/images/Logo_Aide-removebg-preview.png"
-              alt="Logo du menu Aide"
-            />Aide
-          </button>
-        </li>
-        <li>
-          <button>
-            <img
-              src="/assets/images/Logo_Paramètre-removebg-preview.png"
-              alt="Logo du menu Paramètres"
-            />Paramètres
-          </button>
-        </li>
-        <li>
-          <button id="Abonnement">
-            <img
-              src="/assets/images/Logo_Abonnement-removebg-preview.png"
-              alt="Logo du menu Abonnement"
-            />Abonnement
-          </button>
-        </li>
-        <li>
-          <button id="Description">
-            <img
-              src="/assets/images/description-removebg-preview.png"
-              alt="Logo du menu Description"
-            />Description
-          </button>
-        </li>
-        <li>
-          <button id="sedéconecter">
-            <img
-              src="/assets/images/Logo_Déconnection-removebg-preview.png"
-              alt="Logo du menu pour se déconnecter"
-            />Se déconnecter
-          </button>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Abonnement = don pour les pauvres Koalas maltraités par Nico -->
-
-    <div class="fond" id="fond"></div>
-
-    <div class="Abonnement-popup" id="Abonnement-popup">
-      <img
-        class="koala"
-        src="/assets/images/pauvre-koala.png"
-        alt="Faite un don pour ses pauvres Koalas maltraités"
-      />
-
-      <form class="Abonnement-form" id="AbonnementForm">
-        <button class="close3" id="close3">X</button>
-        <section class="text">
-          <h2>Faite un DON !!!</h2>
-          <h3>
-            Sauvez ses pauvres Koalas victimes de maltraitances humaines !!
-          </h3>
-          <p>
-            regarder ce pauvre Koala sur l'image, ne vous donne t-il pas envie
-            de faire un don pour lui? Faites le bon choix !!
-          </p>
-        </section>
-
-        <section class="dons">
-          <button id="un" class="un" type="un">1€</button>
-          <button id="cinque" class="cinque" type="cinque">5€</button>
-          <button id="vcinque" class="vcinque" type="vcinque">25€</button>
-          <button id="cent" class="cent" type="cent">100€</button>
-        </section>
-      </form>
-    </div>
-
-    <!-- Menu d'aide -->
-
-    <div class="fond2" id="fond2"></div>
-
-    <div class="Aide-popup" id="Aide-popup">
-      <img
-        class="Aide"
-        src="https://images.wemystic.fr/articles/850_400_aider-les-autres-est-votre-mission-sur-terre.jpg"
-        alt="Contactez nous pour toute besoin d'aide"
-      />
-
-      <form class="Aide-form" id="AideForm">
-        <button class="close4" id="close4">X</button>
-        <section class="text2">
-          <h2>Besoin d'aide?</h2>
-          <p>
-            Pour toute demande d'aide, veuillez nous contacter via nos réseaux
-            sociaux à la fin du site ou envoyez nous un email via l'adress-mail
-            suivante : drinker-buddy@gmail.com.
-          </p>
-        </section>
-      </form>
-    </div>
-
-    <main>
-      <h2 class="titre">Bienvenue sur Drinker Buddy</h2>
-      <section id="presentation_project">
-        <img src="/assets/images/bar convivial.png" alt="" />
-        <section class="description">
-          <p>
-            Envie de sortir pour boire un verre mais personne n'est disponible?
-            Ne cherchez plus, Drinker Buddy est là pour vous! Notre plateforme
-            vous permet de trouver facilement des compagnons de boisson près de
-            chez vous, que ce soit pour une soirée tranquille dans un bar local
-            ou pour découvrir les meilleures adresses autour de vous.
-          </p>
-          <p>Avec Drinker Buddy, vous pouvez :</p>
-          <p>
-            Rencontrer des amis, discuter, trouver les meilleurs bars du coin et
-            profiter
-          </p>
-        </section>
       </section>
-      <section id="items">
-        <article class="cards">
-          <img src="/assets/images/bars.jpg" alt="" />
-          <button>Trouver un bar</button>
-        </article>
-        <article class="cards">
-          <img src="/assets/images/soiree-reussie-1-3406579153.jpg" alt="" />
+
+      <section class="dons">
+        <button id="un" class="un" type="un">1€</button>
+        <button id="cinque" class="cinque" type="cinque">5€</button>
+        <button id="vcinque" class="vcinque" type="vcinque">25€</button>
+        <button id="cent" class="cent" type="cent">100€</button>
+      </section>
+    </form>
+  </div>
+
+  <!-- Menu d'aide -->
+
+  <div class="fond2" id="fond2"></div>
+
+  <div class="Aide-popup" id="Aide-popup">
+    <img class="Aide" src="https://images.wemystic.fr/articles/850_400_aider-les-autres-est-votre-mission-sur-terre.jpg"
+      alt="Contactez nous pour toute besoin d'aide" />
+
+    <form class="Aide-form" id="AideForm">
+      <button class="close4" id="close4">X</button>
+      <section class="text2">
+        <h2>Besoin d'aide?</h2>
+        <p>
+          Pour toute demande d'aide, veuillez nous contacter via nos réseaux
+          sociaux à la fin du site ou envoyez nous un email via l'adress-mail
+          suivante : drinker-buddy@gmail.com.
+        </p>
+      </section>
+    </form>
+  </div>
+
+  <main>
+    <h2 class="title">Bienvenue sur Drinker Buddy</h2>
+    <section id="presentation_project">
+      <img src="/assets/images/bars.jpg" alt="" />
+      <section class="description">
+        <p>
+          Envie de sortir pour boire un verre mais personne n'est disponible?
+          Ne cherchez plus, Drinker Buddy est là pour vous! Notre plateforme
+          vous permet de trouver facilement des compagnons de boisson près de
+          chez vous, que ce soit pour une soirée tranquille dans un bar local
+          ou pour découvrir les meilleures adresses autour de vous.
+        </p>
+        <p>Avec Drinker Buddy, vous pouvez :</p>
+        <p>
+          Rencontrer des amis, discuter, trouver les meilleurs bars du coin et
+          profiter
+        </p>
+      </section>
+    </section>
+    <section id="items">
+      <article class="cards">
+        <img src="/assets/images/bars.jpg" alt="" />
+        <button>Trouver un bar</button>
+      </article>
+      <article class="cards">
+        <img src="/assets/images/soiree-reussie-1-3406579153.jpg" alt="" />
+        <a href="./pages/buddy.html">
           <button>Trouver un copain</button>
-        </article>
-      </section>
-      <section class="button_container">
-        <i id="circle" class="fa-solid fa-circle-chevron-up fa-2xl"></i>
-      </section>
-    </main>
+      </article>
+    </section>
+    <section class="button_container">
+      <i id="circle" class="fa-solid fa-circle-chevron-up fa-2xl"></i>
+    </section>
+  </main>
 
-    <!-- pied de page -->
+  <!-- pied de page -->
 
-    <footer>
-      <section class="Langue">
-        <img
-          src="/assets/images/logo_internet-removebg-preview.png"
-          alt="Logo du changement de Langue"
-        />
-        <select name="Language">
-          <option value="Français">Français</option>
-          <option value="English">English</option>
-        </select>
-      </section>
+  <footer>
+    <section class="Langue">
+      <img src="/assets/images/logo_internet-removebg-preview.png" alt="Logo du changement de Langue" />
+      <select name="Language">
+        <option value="Français">Français</option>
+        <option value="English">English</option>
+      </select>
+    </section>
 
-      <section class="conditions">
-        <p>&copy, Tout droits réservés, The Drinker Buddy</p>
-        <ul>
-          <p>
-            <a
-              href="https://www.economie.gouv.fr/particuliers/protection-donnees-personnelles-droits-particuliers"
-              >Politique de confidentialité</a
-            >
-          </p>
-          <p>|</p>
-          <p>
-            <a
-              href="https://www.economie.gouv.fr/dgccrf/la-distribution-des-boissons-alcoolisees"
-              >Conditions générales</a
-            >
-          </p>
-        </ul>
-      </section>
-
-      <ul class="Logos">
-        <li>
-          <a href=""
-            ><img
-              src="/assets/images/logo_twitter-removebg-preview.png"
-              alt="Logo Twitter"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="/assets/images/logo_facebook-removebg-preview.png"
-              alt="Logo Facebook"
-          /></a>
-        </li>
-
-        <li>
-          <a href=""
-            ><img
-              src="/assets/images/logo_instagram-removebg-preview.png"
-              alt="Logo Instagram"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="/assets/images/logo_pinterest-removebg-preview.png"
-              alt="Logo Pinterest"
-          /></a>
-        </li>
+    <section class="conditions">
+      <p>&copy, Tout droits réservés, The Drinker Buddy</p>
+      <ul>
+        <p>
+          <a href="https://www.economie.gouv.fr/particuliers/protection-donnees-personnelles-droits-particuliers">Politique
+            de confidentialité</a>
+        </p>
+        <p>|</p>
+        <p>
+          <a href="https://www.economie.gouv.fr/dgccrf/la-distribution-des-boissons-alcoolisees">Conditions
+            générales</a>
+        </p>
       </ul>
-    </footer>
-    <script src="/NavBar.js"></script>
-    <script src="/assets/js/index.js" defer></script>
-    <!-- <script src="/server.js"></script> -->
-  </body>
+    </section>
+
+    <ul class="Logos">
+      <li>
+        <a href=""><img src="/assets/images/logo_twitter-removebg-preview.png" alt="Logo Twitter" /></a>
+      </li>
+      <li>
+        <a href=""><img src="/assets/images/logo_facebook-removebg-preview.png" alt="Logo Facebook" /></a>
+      </li>
+
+      <li>
+        <a href=""><img src="/assets/images/logo_instagram-removebg-preview.png" alt="Logo Instagram" /></a>
+      </li>
+      <li>
+        <a href=""><img src="/assets/images/logo_pinterest-removebg-preview.png" alt="Logo Pinterest" /></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="/NavBar.js"></script>
+  <script src="/assets/js/index.js" defer></script>
+  <!-- <script src="/server.js"></script> -->
+</body>
+
 </html>

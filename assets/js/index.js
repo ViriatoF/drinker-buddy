@@ -3,7 +3,7 @@ const arrow = document.querySelector("i");
 const buttonMain = document.querySelector("button");
 const arrowUp = document.getElementById("circle");
 const descText = document.querySelector(".description");
-const titleDarkMode = document.querySelector("second_title");
+const titleDarkMode = document.querySelector(".title");
 
 arrow.addEventListener("mouseover", () => {
   arrow.classList.add("arrow_color");
@@ -18,6 +18,13 @@ arrow.addEventListener("mouseleave", () => {
 function scrollToNav() {
   return window.scrollTo({
     top: 700,
+    behavior: "smooth",
+  });
+}
+
+function scrollToHeader() {
+  return window.scrollTo({
+    top: 0,
     behavior: "smooth",
   });
 }
@@ -47,12 +54,14 @@ function toggleMode() {
     bouttonMode.textContent = "Night";
     bouttonMode.style.backgroundColor = "black";
     bouttonMode.style.color = "white";
+    titleDarkMode.style.color = "white";
   } else {
     body.classList.add("day-mode");
     body.classList.remove("night-mode");
     bouttonMode.textContent = "Day";
     bouttonMode.style.backgroundColor = "white";
     bouttonMode.style.color = "black";
+    titleDarkMode.style.color = "#a021cd";
     pLogin.style.color = "black";
     pRegister.style.color = "black";
   }
