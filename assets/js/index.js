@@ -42,6 +42,11 @@ const bouttonMode = document.getElementById("nightDayMode");
 const body = document.querySelector("body");
 const pLogin = document.getElementById("pDeLogin");
 const pRegister = document.getElementById("pDeRegister");
+const pAide = document.getElementById("pAide");
+const h2Aide = document.getElementById("h2Aide");
+const pAbonnement = document.getElementById('pAbonnement');
+const h2Abonnement = document.getElementById('h2Abonnement');
+const h3Abonnement = document.getElementById('h3Abonnement');
 
 let darkMode = false;
 
@@ -55,6 +60,11 @@ function toggleMode() {
     bouttonMode.style.backgroundColor = "black";
     bouttonMode.style.color = "white";
     titleDarkMode.style.color = "white";
+    pAide.style.color = "black";
+    h2Aide.style.color = "black";
+    pAbonnement.style.color = "black";
+    h2Abonnement.style.color = "black";
+    h3Abonnement.style.color = "black";
   } else {
     body.classList.add("day-mode");
     body.classList.remove("night-mode");
