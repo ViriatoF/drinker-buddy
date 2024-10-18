@@ -1,12 +1,18 @@
 body {
   background-color: whitesmoke;
 }
-
+nav {
+  display: flex;
+}
 nav h1 {
   text-align: center;
   line-height: 50px;
   font-size: 10ch;
-  margin-top: auto;
+  margin-top: 20px;
+  display: flex;
+  margin-left: 420px;
+  justify-content: center;
+  text-align: center;
   letter-spacing: 15px;
   font-family: "Barriecito", serif;
   font-weight: 400;
@@ -14,8 +20,8 @@ nav h1 {
 }
 
 nav img {
-  height: 100px;
-  width: 120px;
+  height: 208px;
+  width: 182px;
 }
 
 form input {
@@ -52,7 +58,7 @@ img {
   margin: 0 auto;
   flex-direction: column;
   margin-left: 15px;
-  gap: 16px;
+  height: auto;
 }
 
 .container img {
@@ -64,9 +70,9 @@ img {
 
 .child-container {
   position: absolute;
-  left: 55%;
-  bottom: 20%;
-  background-color: rebeccapurple;
+  left: 60%;
+  bottom: 15%;
+  background-color: 0;
 }
 
 img id {
@@ -82,13 +88,17 @@ img id {
   background-color: whitesmoke;
 }
 
-form input {
+body form input {
   display: inline-block;
   padding-right: 15px;
   margin: 50px;
+  margin-top: 5px;
+  margin-bottom: 50px;
   width: 500px;
   text-align: center;
   align-items: 50px;
+  background-color: whitesmoke;
+  height: 30px;
 }
 
 main form {
@@ -116,4 +126,10 @@ p {
   text-align: center;
   width: 500px;
   margin-left: auto;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 90%;
+  }
 }
