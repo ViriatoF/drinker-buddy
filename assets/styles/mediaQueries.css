@@ -1,0 +1,75 @@
+@media screen and (max-width:500px) {
+
+  .title {
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  main {
+    margin: 2rem auto;
+  }
+
+  #items {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+
+  #presentation_project {
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+
+  #presentation_project p {
+    width: auto;
+  }
+
+  #presentation_project img {
+    width: auto;
+  }
+
+  .cards img {
+    width: auto;
+  }
+
+  #nightDayMode {
+    display: none;
+  }
+
+  #circle {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .Langue {
+    margin: 1rem 0;
+  }
+
+  .conditions {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conditions p {
+    margin: 0;
+  }
+
+
+  .conditions ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Logos {
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+  }
+
+}

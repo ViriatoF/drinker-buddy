@@ -1,18 +1,15 @@
 const mainArrow = document.getElementById("scroll_button");
 const arrow = document.querySelector("i");
 const buttonMain = document.querySelector("button");
-// const nightDayButton = document.querySelector("#nightDayMode");
-// const body = document.querySelector("body");
 const arrowUp = document.getElementById("circle");
 const descText = document.querySelector(".description");
-const titleDarkMode = document.querySelector("second_title");
+const titleDarkMode = document.querySelector(".title");
 
 arrow.addEventListener("mouseover", () => {
   arrow.classList.add("arrow_color");
 });
 
 arrow.addEventListener("mouseleave", () => {
-  // console.log("couleur");
   arrow.classList.remove("arrow_color");
 });
 
@@ -20,7 +17,7 @@ arrow.addEventListener("mouseleave", () => {
 
 function scrollToNav() {
   return window.scrollTo({
-    top: 700,
+    top:700,
     behavior: "smooth",
   });
 }
@@ -41,33 +38,19 @@ function toggleMode() {
     bouttonMode.textContent = "Night";
     bouttonMode.style.backgroundColor = "black";
     bouttonMode.style.color = "white";
+    titleDarkMode.style.color = "white";
   } else {
     body.classList.add("day-mode");
     body.classList.remove("night-mode");
     bouttonMode.textContent = "Day";
     bouttonMode.style.backgroundColor = "white";
     bouttonMode.style.color = "black";
+    titleDarkMode.style.color = "#a021cd";
   }
 }
 
 bouttonMode.addEventListener("click", toggleMode);
 
-// function switchDark(){
-//   body.classList.add("night_mode_body");
-//   nightDayButton.textContent = "Light";
-//   darkMode = true;
-//   console.log(darkMode);
-
-// }
-
-// function switchLight(){
-//   body.classList.remove("night_mode_body");
-//   nightDayButton.textContent = "Dark";
-//   darkMode = false;
-//   console.log(darkMode);
-// }
-
-// nightDayButton.addEventListener("click",switchDark);
 
 /*Change color of circle arrow up on top of the website*/
 

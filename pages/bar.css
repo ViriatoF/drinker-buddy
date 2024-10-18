@@ -1,8 +1,16 @@
+body {
+  background-color: whitesmoke;
+}
+
 nav h1 {
   text-align: center;
   line-height: 50px;
   font-size: 10ch;
   margin-top: auto;
+  letter-spacing: 15px;
+  font-family: "Barriecito", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 nav img {
@@ -43,7 +51,7 @@ img {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-
+  margin-left: 15px;
   gap: 16px;
 }
 
@@ -70,6 +78,8 @@ img id {
   grid-template-columns: 120px 120px 120px;
   align-items: center;
   justify-content: center;
+  margin-right: 150px;
+  background-color: whitesmoke;
 }
 
 form input {
@@ -85,7 +95,7 @@ main form {
   text-align: center;
 }
 main img {
-  border-radius: 30px;
+  border-radius: 50px;
 }
 button {
   position: relative;
@@ -100,4 +110,10 @@ button {
   transition: 0.5%;
   box-shadow: 0 0 0 5px #2573ef;
   overflow: hidden;
+}
+p {
+  display: flex;
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
 }
