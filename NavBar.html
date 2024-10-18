@@ -1,238 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/drinker-buddy/NavBar.css" />
-  </head>
 
-  <body>
-    <!-- bar de naviguation -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/NavBar.css" />
+</head>
 
-    <nav>
-      <a href="" class="Logo">
-        <img
-          src="/drinker-buddy/assets/images/Logo DRINKER BUDDY.png"
-          alt="Logo de notre site Drinker Buddy"
-      /></a>
+<body>
+  <!-- bar de naviguation -->
 
-      <ul>
-        <li>
-          <button class="Login" id="voir-popup">Login</button>
-        </li>
-        <li>
-          <button class="Register" id="show-popup">Register</button>
-        </li>
-        <li>
-          <a href="" class="Profile"
-            ><img
-              id="bouttonProfileNC"
-              src="/drinker-buddy/assets/images/profile_boutton_blanc-removebg-preview.png"
-              alt="Logo de Profile"
-          /></a>
-        </li>
-      </ul>
-    </nav>
+  <nav>
+    <a href="" class="Logo">
+      <img src="/assets/images/Logo DRINKER BUDDY.png" alt="Logo de notre site Drinker Buddy" /></a>
 
-    <!-- fenêtre d'ouverture Register -->
+    <ul>
+      <li>
+        <button class="Login" id="voir-popup">Login</button>
+      </li>
+      <li>
+        <button class="Register" id="show-popup">Register</button>
+      </li>
+      <li>
+        <a href="" class="Profile"><img id="bouttonProfileNC"
+            src="/assets/images/profile_boutton_blanc-removebg-preview.png" alt="Logo de Profile" /></a>
+      </li>
+    </ul>
+  </nav>
 
-    <div class="background-blur" id="blur-background"></div>
+  <!-- fenêtre d'ouverture Register -->
 
-    <div class="register-popup" id="register-popup">
-      <img
-        class="leBar"
-        src="/drinker-buddy/assets/images/bar.jpg"
-        alt="Inscrivez-vous et profiter d'un vers avec vos amis"
-      />
-      <form class="register-form">
-        <button class="fermer">X</button>
-        <h2>Register</h2>
-        <input
-          id="userNameInscription"
-          type="text"
-          placeholder="User name"
-          required
-        />
-        <input
-          id="emailInscription"
-          type="email"
-          placeholder="Address mail"
-          required
-        />
-        <input
-          id="passwordInscription"
-          type="password"
-          placeholder="Password"
-          required
-        />
-        <input type="password" placeholder="Confirm Password" required />
-        <button class="Submit" type="submit">Submit</button>
+  <div class="background-blur" id="blur-background"></div>
+
+  <div class="register-popup" id="register-popup">
+    <img class="leBar" src="/assets/images/bar.jpg" alt="Inscrivez-vous et profiter d'un vers avec vos amis" />
+    <form class="register-form">
+      <button class="fermer">X</button>
+      <h2>Register</h2>
+      <input id="userNameInscription" type="text" placeholder="User name" required />
+      <input id="emailInscription" type="email" placeholder="Address mail" required />
+      <input id="passwordInscription" type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <button class="Submit" type="submit">Submit</button>
+      <p>
+        Already Registred ? Login <a href="" class="directionLogin">here</a>.
+      </p>
+      <div class="social-login">
+        <button class="google-login">
+          <img src="/assets/images/Logo Google.png" alt="Logo de Google" />Continue with Google
+        </button>
+        <button class="facebook-login">
+          <img src="/assets/images/logo_facebook_sans_contour-removebg-preview.png" alt="Logo de Facebook" />Continue
+          with Facebook
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- fenêtre d'ouverture Login -->
+
+  <div class="fond-gris" id="fond-gris"></div>
+
+  <div class="login-popup" id="login-popup">
+    <img class="leBar2" src="/assets/images/barDrinkerBuddy.jpg"
+      alt="Inscrivez-vous et profiter d'un vers avec vos amis" />
+    <form class="login-form">
+      <button class="close">X</button>
+      <h2>Login</h2>
+      <input id="adressmail" type="email" placeholder="Address mail" required />
+      <input id="motdepasse" type="password" placeholder="Password" required />
+      <button class="envoyer" type="submit">Submit</button>
+      <p>
+        Not yet Registred ? Do it
+        <a href="" class="directionRegister">here</a>.
+      </p>
+      <div class="social-connect">
+        <button class="google-connect">
+          <img src="/assets/images/Logo Google.png" alt="Logo de Google" />Continue with Google
+        </button>
+        <button class="facebook-connect">
+          <img src="/assets/images/logo_facebook_sans_contour-removebg-preview.png" alt="Logo de Facebook" />Continue
+          with Facebook
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Menu déroulant du profil non connecté-->
+
+  <div class="profile-menu" id="profileMenu">
+    <h2>Mon Profile</h2>
+    <ul>
+      <li>
+        <button>
+          <img src="/assets/images/Logo_Aide-removebg-preview.png" alt="Logo du menu Aide" />Aide
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="/assets/images/Logo_Paramètre-removebg-preview.png" alt="Logo du menu Paramètres" />Paramètres
+        </button>
+      </li>
+      <li>
+        <button>
+          <img src="/assets/images/Logo_Abonnement-removebg-preview.png" alt="Logo du menu Abonnement" />Abonnement
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <h2 class="titre">Bienvenue sur Drinker Buddy</h2>
+    <section id="presentation_project">
+      <img src="/assets/images/barDrinkerBuddy.png" alt="" />
+      <section class="description">
         <p>
-          Already Registred ? Login <a href="" class="directionLogin">here</a>.
+          Envie de sortir pour boire un verre mais personne n'est disponible?
+          Ne cherchez plus, Drinker Buddy est là pour vous! Notre plateforme
+          vous permet de trouver facilement des compagnons de boisson près de
+          chez vous, que ce soit pour une soirée tranquille dans un bar local
+          ou pour découvrir les meilleures adresses autour de vous.
         </p>
-        <div class="social-login">
-          <button class="google-login">
-            <img
-              src="/drinker-buddy/assets/images/Logo Google.png"
-              alt="Logo de Google"
-            />Continue with Google
-          </button>
-          <button class="facebook-login">
-            <img
-              src="/drinker-buddy/assets/images/logo_facebook_sans_contour-removebg-preview.png"
-              alt="Logo de Facebook"
-            />Continue with Facebook
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <!-- fenêtre d'ouverture Login -->
-
-    <div class="fond-gris" id="fond-gris"></div>
-
-    <div class="login-popup" id="login-popup">
-      <img
-        class="leBar2"
-        src="/drinker-buddy/assets/images/barDrinkerBuddy.png"
-        alt="Inscrivez-vous et profiter d'un vers avec vos amis"
-      />
-      <form class="login-form">
-        <button class="close">X</button>
-        <h2>Login</h2>
-        <input
-          id="adressmail"
-          type="email"
-          placeholder="Address mail"
-          required
-        />
-        <input
-          id="motdepasse"
-          type="password"
-          placeholder="Password"
-          required
-        />
-        <button class="envoyer" type="submit">Submit</button>
+        <p>Avec Drinker Buddy, vous pouvez :</p>
         <p>
-          Not yet Registred ? Do it
-          <a href="" class="directionRegister">here</a>.
+          Rencontrer des amis, discuter, trouver les meilleurs bars du coin et
+          profiter
         </p>
-        <div class="social-connect">
-          <button class="google-connect">
-            <img
-              src="/drinker-buddy/assets/images/Logo Google.png"
-              alt="Logo de Google"
-            />Continue with Google
-          </button>
-          <button class="facebook-connect">
-            <img
-              src="/drinker-buddy/assets/images/logo_facebook_sans_contour-removebg-preview.png"
-              alt="Logo de Facebook"
-            />Continue with Facebook
-          </button>
-        </div>
-      </form>
-    </div>
+      </section>
+    </section>
+    <section id="items">
+      <article class="cards">
+        <img src="/assets/images/bars.jpg" alt="" />
+        <button>Trouver un bar</button>
+      </article>
+      <article class="cards">
+        <img src="/assets/images/soiree-reussie-1-3406579153.jpg" alt="" />
+        <button>Trouver un copain</button>
+      </article>
+    </section>
+  </main>
 
-    <!-- Menu déroulant du profil non connecté-->
+  <!-- pied de page -->
 
-    <div class="profile-menu" id="profileMenu">
-      <h2>Mon Profile</h2>
+  <footer>
+    <section class="Langue">
+      <img src="/assets/images/logo_internet-removebg-preview.png" alt="Logo du changement de Langue" />
+      <select name="Language">
+        <option value="Français">Français</option>
+        <option value="English">English</option>
+      </select>
+    </section>
+
+    <section class="conditions">
+      <p>&copy, Tout droits réservés, The Drinker Buddy</p>
       <ul>
-        <li>
-          <button>
-            <img
-              src="/drinker-buddy/assets/images/Logo_Aide-removebg-preview.png"
-              alt="Logo du menu Aide"
-            />Aide
-          </button>
-        </li>
-        <li>
-          <button>
-            <img
-              src="/drinker-buddy/assets/images/Logo_Paramètre-removebg-preview.png"
-              alt="Logo du menu Paramètres"
-            />Paramètres
-          </button>
-        </li>
-        <li>
-          <button>
-            <img
-              src="/drinker-buddy/assets/images/Logo_Abonnement-removebg-preview.png"
-              alt="Logo du menu Abonnement"
-            />Abonnement
-          </button>
-        </li>
+        <p>
+          <a href="https://www.economie.gouv.fr/particuliers/protection-donnees-personnelles-droits-particuliers">Politique
+            de confidentialité</a>
+        </p>
+        <p>|</p>
+        <p>
+          <a href="https://www.economie.gouv.fr/dgccrf/la-distribution-des-boissons-alcoolisees">Conditions
+            générales</a>
+        </p>
       </ul>
-    </div>
+    </section>
 
-    <main><h1>1</h1></main>
+    <ul class="Logos">
+      <li>
+        <a href=""><img src="/assets/images/logo_facebook-removebg-preview.png" alt="Logo Facebook" /></a>
+      </li>
+      <li>
+        <a href=""><img src="/assets/images/logo_twitter-removebg-preview.png" alt="Logo Twitter" /></a>
+      </li>
+      <li>
+        <a href=""><img src="/assets/images/logo_instagram-removebg-preview.png" alt="Logo Instagram" /></a>
+      </li>
+      <li>
+        <a href=""><img src="/assets/images/logo_pinterest-removebg-preview.png" alt="Logo Pinterest" /></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="/NavBar.js"></script>
+</body>
 
-    <!-- pied de page -->
-
-    <footer>
-      <section class="Langue">
-        <img
-          src="/drinker-buddy/assets/images/logo_internet-removebg-preview.png"
-          alt="Logo du changement de Langue"
-        />
-        <select name="Language">
-          <option value="Français">Français</option>
-          <option value="English">English</option>
-        </select>
-      </section>
-
-      <section class="conditions">
-        <p>&copy, Tout droits réservés, The Drinker Buddy</p>
-        <ul>
-          <p>
-            <a
-              href="https://www.economie.gouv.fr/particuliers/protection-donnees-personnelles-droits-particuliers"
-              >Politique de confidentialité</a
-            >
-          </p>
-          <p>|</p>
-          <p>
-            <a
-              href="https://www.economie.gouv.fr/dgccrf/la-distribution-des-boissons-alcoolisees"
-              >Conditions générales</a
-            >
-          </p>
-        </ul>
-      </section>
-
-      <ul class="Logos">
-        <li>
-          <a href=""
-            ><img
-              src="/drinker-buddy/assets/images/logo_facebook-removebg-preview.png"
-              alt="Logo Facebook"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="/drinker-buddy/assets/images/logo_twitter-removebg-preview.png"
-              alt="Logo Twitter"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="/drinker-buddy/assets/images/logo_instagram-removebg-preview.png"
-              alt="Logo Instagram"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="/drinker-buddy/assets/images/logo_pinterest-removebg-preview.png"
-              alt="Logo Pinterest"
-          /></a>
-        </li>
-      </ul>
-    </footer>
-    <script src="/drinker-buddy/NavBar.js"></script>
-  </body>
 </html>

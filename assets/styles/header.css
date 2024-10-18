@@ -20,7 +20,7 @@ header {
   /* filter: blur(5px); */
 }
 
-/* Style pour le H1 néon */
+/* Style pour le H1 néon clignotant*/
 
 @keyframes flicker {
 
@@ -134,4 +134,5 @@ H1 {
   position: absolute;
   top: 0;
   right: 1rem;
+  position: fixed;
 }
